@@ -1,0 +1,118 @@
+/* hexadecimal
+body {
+    background-color: #aa5522 ou #a52;
+} */
+
+/* rgb 0 a 255
+body {
+    background-color: rgb(0, 255, 0);
+} */
+
+/* hsl matiz saturaçao e brilho 0 a 360 | 0 a 100
+body {
+    background-color: hsl(0, 100% colorida, 50% brilho);
+} */
+
+/* nomeada, nao da p mexer na transparencia */
+body {
+    /* background-color: gray;
+    background-image: url("bg.png"); */
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-Y; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat; */
+    /* background-position: right bottom;  */
+    /* background-position: right top;  */
+    /* background-position: left top; 
+    background-position: left top;  */
+    /* background-attachment: fixed; */
+    /* background-attachment: scroll; */
+    /* background: cor, imagem, padrao de repetiçao, tipo de associaçao de imagem, posiçao */
+    background: gray url("bg.png") repeat fixed left bottom;
+    background-size: 50px;
+}
+
+/* da p mexer na opacidade, o ulttimo e o alfa, vai de 0 a 1, transparente a opaco */
+/* tracejada
+p {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    border-style:dashed;
+    border-color: black;
+}
+
+pontilhado
+p {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    border-color: black;
+    border-style: dotted;
+}
+
+linha solida
+p {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    border-color: black;
+    border-style: solid;
+}
+borda dupla
+p {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    border-color: black;
+    border-style: double;
+}
+
+groove
+p {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    border-color: black;
+    border-style: groove;
+} */
+
+p {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    /* border-color: black;
+    border-top-width: 3px;
+    /* border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: dotted;
+    border-right-style: dotted; */
+    /* border-style: cima, direita, baixo, esquerda */
+    /* border-style: solid, dotted, solid, dotted */
+    /* border-style: solid, dotted */
+
+    /* border-style: solid, dotted, groove */
+
+    /* border: largura, estilo e cor, o que vem depois prescreve o que vem, antes */
+    border: 3px, solid, black;
+    border-style: solid, dotted;
+    /* arredonda os campos */
+    border-radius: 10px;
+    /* border-bottom-left-radius: 10px; */
+}
+
+/* mesma ideia da borda quanto atribuir valor dos lados
+espacamento borda para fora */
+#p1 {
+    /* mesma ideia da borda quanto atribuir valor dos lados
+espacamento borda para fora */
+    margin: 10px auto;
+    /* espacamento borda para dentro */
+    padding: 10px;
+    /* regiao de conteudo */
+    width: 200px;
+    height: 200px;
+
+    /* borda externa */
+    /* outline-style: solid;
+    outline-color: black;
+    outline-width: 3px; */
+    /* distancia do elemento, nao altera o tamanho do elemento */
+    outline-offset: 6px;
+    outline: 3px solid black;
+    /* a borda externa segue o arredondamento da borda interna */
+}
